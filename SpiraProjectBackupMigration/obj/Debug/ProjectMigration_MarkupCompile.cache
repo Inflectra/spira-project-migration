@@ -1,0 +1,20 @@
+﻿ProjectMigration
+
+
+winexe
+C#
+.cs
+C:\subversion\projects\SpiraTeam Add Ons\Trunk\Other\Project Backup and Migration\SpiraProjectBackupMigration\obj\Debug\
+Inflectra.SpiraTest.Utilities.ProjectMigration
+none
+false
+DEBUG;TRACE
+C:\subversion\projects\SpiraTeam Add Ons\Trunk\Other\Project Backup and Migration\SpiraProjectBackupMigration\App.xaml
+24-1807713689
+
+40-1265484299
+16189322061
+arrows.xaml;Classes\ucntSpinnerApple.xaml;Pages\Export\usercntProgressOutput.xaml;Pages\Export\usercntVerifyExport.xaml;Pages\Export\usercntSelOutputFile.xaml;Pages\Export\usercntSpiraSelProject.xaml;Pages\Import\usercntSpiraNewUser.xaml;Pages\Import\usercntProgressInput.xaml;Pages\Import\usercntSelInputFile.xaml;Pages\Import\usercntSpiraCrtProject.xaml;Pages\Import\usercntVerifyImport.xaml;Pages\Transfer\trnsSpiraConnect2.xaml;Pages\Transfer\trnsSpiraConnect1.xaml;Pages\Transfer\trnsCreateProject.xaml;Pages\Transfer\trnsSelectProject.xaml;Pages\Transfer\trnsProgressOut.xaml;Pages\Transfer\trnsProgressIn.xaml;Pages\Transfer\trnsVerifyTransfer.xaml;Pages\Transfer\trnsSpiraNewUser.xaml;Pages\usercntSpiraConnect.xaml;Windows\wndTransfer.xaml;Windows\wndImport.xaml;Windows\wndExport.xaml;Windows\wndMain.xaml;
+
+False
+

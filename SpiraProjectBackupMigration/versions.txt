@@ -1,0 +1,7 @@
+﻿7/12/2012 (4.0.0.15012)
+=========
++ Initial Release
+
+9/24/2013 (4.0.0.16424)
+=========
+! Adjusted API calls to better transfer data.

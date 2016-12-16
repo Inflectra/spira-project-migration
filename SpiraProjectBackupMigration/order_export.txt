@@ -1,0 +1,47 @@
+﻿STEP 1, ASYNC:
+====================
+RemoteAutomationEngine [AutomationEngine_Retrieve]
+RemoteAutiomationHost [AutomationHost_Retrieve]
+RemoteCustomList [CustomProperty_RetrieveCustomlists]
+RemoteDocumentTypes [Document_RetrieveTypes]
+RemoteDocumentFolders [Document_RetrieveFolders]
+	RemoteDocument [Document_RetrieveForFolder]
+
+STEP 2, ASYNC:
+==============
+RemoteCustomProperty [CustomProperty_RetrieveForArtifactType]
+	(x9: RQ,TC/TS,IN,RL,TR,TK,TS,AH)
+
+STEP 3, SYNC:
+=============
+RemoteIncident [Incident_Retrieve]
+	RemoteAssociation [Association_RetrieveForArtifact]
+	RemoteResolution [Incident_RetrieveResolutions]
+RemoteRelease [Release_Retrieve]
+	RemoteAssociation [Association_RetrieveForArtifact]
+	RemoteComment [Release_RetrieveComments]
+	RemoteReleaseTestCaseMapping [Release_RetrieveTestMapping]
+	RemoteBuild [Build_RetrieveByReleaseId]
+RemoteRequirement [Requirement_Retrieve]
+	RemoteAssociation [Association_RetrieveForArtifact]
+	RemoteComment [Requirement_RetrieveComments]
+	RemoteRequirementTestCaseMapping [Requirement_RetrieveTestCoverage]
+RemoteTask [Task_Retrieve]
+	RemoteAssociation [Association_RetrieveForArtifact]
+	RemoteComment [Task_RetrieveComments]
+RemoteTestCase [TestCase_Retrieve]
+	RemoteAssociation [Association_RetrieveForArtifact]
+	RemoteComment [TestCase_RetrieveComments]
+RemoteTestRun [TestRun_Retrieve]
+	RemoteAssociation [Association_RetrieveForArtifact]
+RemoteTestSet [TestSet_Retrieve]
+	RemoteAssociation [Association_RetrieveForArtifact]
+	RemoteComment [TestSet_RetrieveComments]
+	RemoteTestSetTestCaseMapping [TestSet_RetrieveTestCaseMapping]
+RemoteDataMapping [..]
+RemoteProjectUser [Projet_RetrieveUserMembership]
+RemoteProjectRole [ProjectRole_Retireve]
+
+LAST
+====
+Attachments [Document_OpenFile] - Called after getting all the RemoteDocuments above.

@@ -1,0 +1,28 @@
+﻿IN ORDER:
+=========
+Project Roles  - May be needed?
+Users
+Releases
+AutomationHosts
+AutomationEngines
+TestCases
+	-Comments
+TestSteps
+TestSets
+	-Comments
+TestRuns
+Requirements
+	-Comments
+	-Mapped Test Cases
+Tasks
+	-Comments
+Incidents
+	-Priorities
+	-Types
+	-Severities
+	-Statuses
+	-Resoluitions
+
+NEEDED
+======
+ProjectRole_Create()

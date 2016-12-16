@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiraProjectBackupMigration", "SpiraProjectBackupMigration\SpiraProjectBackupMigration.csproj", "{5EA96FEA-0B33-422B-9032-A85C37D0C095}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "SetupProject", "SetupProject\SetupProject.wixproj", "{0DA1BA45-64C6-4F8E-98FC-01B8E557FD39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EA96FEA-0B33-422B-9032-A85C37D0C095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA96FEA-0B33-422B-9032-A85C37D0C095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA96FEA-0B33-422B-9032-A85C37D0C095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA96FEA-0B33-422B-9032-A85C37D0C095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DA1BA45-64C6-4F8E-98FC-01B8E557FD39}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0DA1BA45-64C6-4F8E-98FC-01B8E557FD39}.Release|Any CPU.ActiveCfg = Release|x86
+		{0DA1BA45-64C6-4F8E-98FC-01B8E557FD39}.Release|Any CPU.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = ..
+		BuildVersion_UseGlobalSettings = True
+	EndGlobalSection
+EndGlobal

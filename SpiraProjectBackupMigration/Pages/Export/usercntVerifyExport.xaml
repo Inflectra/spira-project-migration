@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Inflectra.SpiraTest.Utilities.ProjectMigration.usercntVerifyExport"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="126" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<TextBlock Height="Auto" TextWrapping="Wrap" Grid.ColumnSpan="2" Grid.Column="0">
+			<TextBlock.Inlines>
+				<Run FontWeight="Bold" FontSize="16">Ready To Export!</Run>
+				<LineBreak />
+				<Run>You are now ready to begin exporting the project into the selected file. Depending on the size of the project, this could take up to 30 minutes.</Run>
+				<LineBreak />
+				<Run>If you want to change any settings, click 'Back' and make changes as necessary.</Run>
+				<LineBreak />
+				<Run>Otherwise, click the 'Next' button to start the export.</Run>
+			</TextBlock.Inlines>
+		</TextBlock>
+	</Grid>
+</UserControl>

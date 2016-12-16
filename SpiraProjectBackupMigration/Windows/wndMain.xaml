@@ -1,0 +1,61 @@
+﻿<Window x:Class="Inflectra.SpiraTest.Utilities.ProjectMigration.wndMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SpiraTeam Project Backup &amp; Restore"
+		Height="350" Width="450"
+		WindowStartupLocation="CenterScreen"
+		VisualTextRenderingMode="ClearType" VisualClearTypeHint="Enabled"
+		ResizeMode="CanMinimize"
+		Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" 
+		Icon="/ProjectMigration;component/Resources/App.ico">
+
+	<Grid Margin="5">
+		<DockPanel LastChildFill="True">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="3*" />
+					<RowDefinition Height="3*" />
+					<RowDefinition Height="3*" />
+				</Grid.RowDefinitions>
+				<Button Name="btnExport" Height="Auto" HorizontalAlignment="center" VerticalAlignment="center" Width="Auto" Grid.Row="0" Margin="25" Click="btnExport_Click">
+					<Rectangle Fill="{StaticResource ResourceKey=ActivityArrow_Export}" Height="48" Width="48" />
+				</Button>
+				<Button Name="btnImport" Height="Auto" HorizontalAlignment="center" VerticalAlignment="center" Width="Auto" Grid.Row="1" Margin="25" Click="btnImport_Click">
+					<Rectangle Fill="{StaticResource ResourceKey=ActivityArrow_Import}" Height="48" Width="48" />
+				</Button>
+				<Button Name="btnTransfer" Height="Auto" HorizontalAlignment="center" VerticalAlignment="center" Width="Auto" Grid.Row="2" Margin="25" Click="btnTransfer_Click">
+					<Canvas Height="48" Width="48">
+						<Rectangle Fill="{StaticResource ResourceKey=ActivityArrow_Transfer2}" Height="36" Width="36" RadiusX="0" Canvas.Right="0" Canvas.Top="-2" />
+						<Rectangle Fill="{StaticResource ResourceKey=ActivityArrow_Transfer1}" Height="36" Width="36" Canvas.Bottom="-2" Canvas.Left="0" />
+					</Canvas>
+				</Button>
+				<TextBlock Grid.Column="1" Height="Auto" HorizontalAlignment="Stretch" Name="txtExport" VerticalAlignment="Center" Width="Auto" Margin="0,25,25,25" TextWrapping="Wrap">
+					<TextBlock.Inlines>
+						<Run FontWeight="Bold" FontSize="16">Export:</Run>
+						<LineBreak />
+						<Run>Export a project into a PRJ file from an existing Spira installation.</Run>
+					</TextBlock.Inlines>
+				</TextBlock>
+				<TextBlock Grid.Column="1" Grid.Row="1" Height="Auto" HorizontalAlignment="Stretch" Name="txtImport" VerticalAlignment="Center" Width="Auto" Margin="0,25,25,25" TextWrapping="Wrap">
+					<TextBlock.Inlines>
+						<Run FontWeight="Bold" FontSize="16">Import:</Run>
+						<LineBreak />
+						<Run>Import a project file into Spira from a PRJ project file.</Run>
+					</TextBlock.Inlines>
+				</TextBlock>
+				<TextBlock Grid.Column="1" Grid.Row="2" Height="Auto" HorizontalAlignment="Stretch" Name="txtTransfer" VerticalAlignment="Center" Width="Auto" Margin="0,25,25,25" TextWrapping="Wrap">
+					<TextBlock.Inlines>
+						<Run FontWeight="Bold" FontSize="16">Transfer:</Run>
+						<LineBreak />
+						<Run>Directly transfer a project from one Spira installation into another installation.</Run>
+					</TextBlock.Inlines>
+				</TextBlock>
+
+			</Grid>
+		</DockPanel>
+	</Grid>
+</Window>
